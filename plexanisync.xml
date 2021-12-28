@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PlexAniSync</Name>
+  <Repository>mizz141/plexanisync-mizz141</Repository>
+  <Registry>https://hub.docker.com/r/mizz141/plexanisync-mizz141/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>[TODO]</Support>
+  <Project>https://github.com/RickDB/PlexAniSync<Project/>
+  <Overview>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/RickDB/PlexAniSync/raw/master/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141.
+
+  A premade custom_mappings.yaml file is available on github: https://github.com/mizz141/PlexAniSync-Mappings along with additional installation instructions (Highly Recommended)</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/PlexAniSync/PlexAniSync-Mappings/custom_mappings.yaml</HostDir>
+      <ContainerDir>/plexanisync/custom_mappings.yaml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>ANI_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>PLEX_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>ANI_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>PLEX_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>PLEX_SECTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>SKIP_LIST_UPDATE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="CUSTOM_MAPPINGS" Target="/plexanisync/custom_mappings.yaml" Default="" Mode="rw" Description="Container Path: /PlexAniSync-Mappings/custom_mappings.yaml" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/PlexAniSync/PlexAniSync-Mappings/custom_mappings.yaml</Config>
+  <Config Name="ANI_USERNAME" Target="ANI_USERNAME" Default="" Mode="" Description="Container Variable: ANI_USERNAME" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PLEX_URL" Target="PLEX_URL" Default="" Mode="" Description="Container Variable: PLEX_URL" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="ANI_TOKEN" Target="ANI_TOKEN" Default="" Mode="" Description="Container Variable: ANI_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PLEX_TOKEN" Target="PLEX_TOKEN" Default="" Mode="" Description="Container Variable: PLEX_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PLEX_SECTION" Target="PLEX_SECTION" Default="" Mode="" Description="Container Variable: PLEX_SECTION" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="Container Variable: SKIP_LIST_UPDATE" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
