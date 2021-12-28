@@ -12,7 +12,7 @@
   <Overview>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141
     
   A premade custom_mappings.yaml file is available on github: https://github.com/mizz141/PlexAniSync-Mappings along with additional installation instructions (Highly Recommended)</Overview>
-  <Category/>
+  <Category>MediaApp:Video MediaServer:Video</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://github.com/RickDB/PlexAniSync/raw/master/logo.png</Icon>
