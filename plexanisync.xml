@@ -63,7 +63,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>False</Value>
+      <Value></Value>
       <Name>SKIP_LIST_UPDATE</Name>
       <Mode/>
     </Variable>
@@ -75,5 +75,5 @@
   <Config Name="ANI_TOKEN" Target="ANI_TOKEN" Default="" Mode="" Description="Get your anilist token from here: https://anilist.co/api/v2/oauth/authorize?client_id=1549&response_type=token" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PLEX_TOKEN" Target="PLEX_TOKEN" Default="" Mode="" Description="Follow this guide: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PLEX_SECTION" Target="PLEX_SECTION" Default="" Mode="" Description="The library where your anime resides" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="If set to True, it will NOT update your AniList which is useful if you want to do a test run to check if everything lines up properly. (default = False)" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="If set to True, it will NOT update your AniList which is useful if you want to do a test run to check if everything lines up properly. (default = False)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
