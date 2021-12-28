@@ -9,7 +9,9 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/117762-support-rickdbmizz141-plexanisync/</Support>
   <Project>https://github.com/RickDB/PlexAniSync</Project>
-  <Overview>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141</Overview>
+  <Overview>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141
+    
+  A premade custom_mappings.yaml file is available on github: https://github.com/mizz141/PlexAniSync-Mappings along with additional installation instructions (Highly Recommended)</Overview>
   <Category/>
   <WebUI/>
   <TemplateURL/>
@@ -61,7 +63,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value></Value>
+      <Value>False</Value>
       <Name>SKIP_LIST_UPDATE</Name>
       <Mode/>
     </Variable>
@@ -73,5 +75,5 @@
   <Config Name="ANI_TOKEN" Target="ANI_TOKEN" Default="" Mode="" Description="Container Variable: ANI_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PLEX_TOKEN" Target="PLEX_TOKEN" Default="" Mode="" Description="Container Variable: PLEX_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PLEX_SECTION" Target="PLEX_SECTION" Default="" Mode="" Description="Container Variable: PLEX_SECTION" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="Container Variable: SKIP_LIST_UPDATE" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="Container Variable: SKIP_LIST_UPDATE" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
 </Container>
