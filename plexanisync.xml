@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>[TODO]</Support>
+  <Support>https://forums.unraid.net/topic/117762-support-rickdbmizz141-plexanisync/</Support>
   <Project>https://github.com/RickDB/PlexAniSync<Project/>
   <Overview>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141</Overview>
   <Category/>
