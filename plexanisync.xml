@@ -73,7 +73,7 @@
     <Variable>
       <Value>/config/settings.ini</Value>
       <Name>SETTINGS_FILE</Name>
-    <Mode/>
+      <Mode/>
     </Variable>
   </Environment>
   <Labels/>
