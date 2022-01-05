@@ -9,7 +9,10 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/117762-support-rickdbmizz141-plexanisync/</Support>
   <Project>https://github.com/RickDB/PlexAniSync</Project>
-  <Overview>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141.
+  <Overview>&#xD;
+   &#xD;
+   Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141.
+   &#xD;
    A premade custom_mappings.yaml file is available on github: https://github.com/mizz141/PlexAniSync-Mappings along with additional installation instructions (Highly Recommended)</Overview>
   <Category>MediaApp:Video MediaServer:Video</Category>
   <WebUI/>
@@ -21,7 +24,10 @@
   <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141. 
+  <Description>&#xD;
+   &#xD;
+   Plexanisync lets you synchronize your plex library with anilist, plugin from RickDB, Docker-Hub version maintained by Mizz141.
+   &#xD;
    A premade custom_mappings.yaml file is available on github: https://github.com/mizz141/PlexAniSync-Mappings along with additional installation instructions (Highly Recommended)</Description>
   <Networking>
     <Mode>bridge</Mode>
