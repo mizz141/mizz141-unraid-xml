@@ -33,6 +33,11 @@
       <ContainerDir>/plexanisync/custom_mappings.yaml</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config/settings.ini</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
@@ -65,6 +70,11 @@
       <Name>SKIP_LIST_UPDATE</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>/config/settings.ini</Value>
+      <Name>SETTINGS_FILE</Name>
+    <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="CUSTOM_MAPPINGS" Target="/plexanisync/custom_mappings.yaml" Default="" Mode="rw" Description="Installation instructions here: https://github.com/mizz141/PlexAniSync-Mappings/wiki/Installation-on-unRAID" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/PlexAniSync/PlexAniSync-Mappings/custom_mappings.yaml</Config>
@@ -74,4 +84,6 @@
   <Config Name="PLEX_TOKEN" Target="PLEX_TOKEN" Default="" Mode="" Description="Follow this guide: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PLEX_SECTION" Target="PLEX_SECTION" Default="" Mode="" Description="The library where your anime resides" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="If set to True, it will NOT update your AniList which is useful if you want to do a test run to check if everything lines up properly. (default = False)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="settings_location" Target="/config/settings.ini" Default="" Mode="rw" Description="/config/settings.ini, ONLY USE WHEN NECESSARY" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SETTINGS_FILE" Target="SETTINGS_FILE" Default="" Mode="" Description="/config/settings.ini, ONLY USE WHEN NECESSARY" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
