@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>PlexAniSync</Name>
   <Repository>ghcr.io/rickdb/plexanisync:latest</Repository>
-  </Registry>
+  <Registry/>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
