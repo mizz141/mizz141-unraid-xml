@@ -35,7 +35,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/PlexAniSync/PlexAniSync-Mappings/custom_mappings.yaml</HostDir>
+      <HostDir>/mnt/user/appdata/PlexAniSync/custom_mappings.yaml</HostDir>
       <ContainerDir>/plexanisync/custom_mappings.yaml</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -83,11 +83,11 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="CUSTOM_MAPPINGS" Target="/plexanisync/custom_mappings.yaml" Default="" Mode="rw" Description="Installation instructions here: https://github.com/mizz141/PlexAniSync-Mappings/wiki/Installation-on-unRAID" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/PlexAniSync/PlexAniSync-Mappings/custom_mappings.yaml</Config>
-  <Config Name="ANI_USERNAME" Target="ANI_USERNAME" Default="" Mode="" Description="Your http://www.anilist.co username" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="PLEX_URL" Target="PLEX_URL" Default="" Mode="" Description="The address to your Plex Media Server, for example: http://127.0.0.1:32400" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="ANI_TOKEN" Target="ANI_TOKEN" Default="" Mode="" Description="Your anilist token (See install guide)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="PLEX_TOKEN" Target="PLEX_TOKEN" Default="" Mode="" Description="Follow this guide: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CUSTOM_MAPPINGS" Target="/plexanisync/custom_mappings.yaml" Default="" Mode="rw" Description="Installation instructions here: https://github.com/mizz141/PlexAniSync-Mappings/wiki/Installation-on-unRAID" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/PlexAniSync/custom_mappings.yaml</Config>
+  <Config Name="ANI_USERNAME" Target="ANI_USERNAME" Default="" Mode="" Description="Your http://www.anilist.co username" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PLEX_URL" Target="PLEX_URL" Default="" Mode="" Description="The address to your Plex Media Server, for example: http://127.0.0.1:32400" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="ANI_TOKEN" Target="ANI_TOKEN" Default="" Mode="" Description="Your anilist token (See install guide)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PLEX_TOKEN" Target="PLEX_TOKEN" Default="" Mode="" Description="Follow this guide: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="PLEX_SECTION" Target="PLEX_SECTION" Default="" Mode="" Description="The library where your anime resides" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="If set to True, it will NOT update your AniList which is useful if you want to do a test run to check if everything lines up properly. (default = False)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="settings_location" Target="/config/settings.ini" Default="" Mode="rw" Description="/config/settings.ini, ONLY USE WHEN NECESSARY" Type="Path" Display="always" Required="false" Mask="false"></Config>
