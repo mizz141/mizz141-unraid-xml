@@ -4,6 +4,13 @@
   <Repository>ghcr.io/turbocheetah/sneedznab:master</Repository>
   <Registry/>
   <Network>bridge</Network>
+      <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
