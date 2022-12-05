@@ -60,4 +60,5 @@
   <Config Name="ANIMEBYTES_PASSKEY" Target="ANIMEBYTES_PASSKEY" Default="" Mode="" Description="Your AnimeBytes Passkey" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="CACHE_TTL" Target="CACHE_TTL" Default="120" Mode="" Description="Cache TTL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="DEBUG" Target="DEBUG" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Type="Port" Name="Sneedznab Port" Target="3000" Default="3000" Mode="tcp" Description="The port where Sonarr, Radarr etc. will access the Sneedznab API" Display="always" Required="true">3000</Config>
 </Container>
