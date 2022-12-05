@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Sneedznab</Name>
+  <Repository>ghcr.io/turbocheetah/sneedznab:master</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/UyEMAeqzX5</Support>
+  <Project>https://sneedex.moe/</Project>
+  <Overview>&#xD;
+   &#xD;
+   Sneedznab is a Torznab Indexer which pulls data directly from Sneedex
+   &#xD;
+   Sneedex tracks the best releases of anime torrents; taking video, audio, and subtitle quality into consideration.</Overview>
+  <Category>MediaApp:Video MediaServer:Video</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#xD;
+   &#xD;
+   Sneedznab lets your Sonarr, Radarr etc. instance automatically search and upgrade to the latest releases on Sneedex.
+   &#xD;
+   There are no requirements for running Sneedznab, altough an AnimeBytes account and custom redis cache can be integrated.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>ANIMEBYTES_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>ANIMEBYTES_PASSKEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>120</Value>
+      <Name>CACHE_TTL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>DEBUG</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="ANIMEBYTES_USERNAME" Target="ANIMEBYTES_USERNAME" Default="" Mode="" Description="Your AnimeBytes username" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="ANIMEBYTES_PASSKEY" Target="ANIMEBYTES_PASSKEY" Default="" Mode="" Description="Your AnimeBytes Passkey" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CACHE_TTL" Target="CACHE_TTL" Default="120" Mode="" Description="Cache TTL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DEBUG" Target="DEBUG" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
