@@ -18,7 +18,8 @@
   <Project>https://sneedex.moe/</Project>
   <Overview>&#xD;
    &#xD;
-   Sneedznab is a Torznab Indexer which pulls data directly from Sneedex
+   Sneedznab is a Torznab Indexer which pulls data directly from Sneedex, to use, simply create a new torznab indexer, and use [ServerURL]:[Port] for the indexer.
+   It can be used both as a Torrent Indexer, and NZB Indexer.
    &#xD;
    Sneedex tracks the best releases of anime torrents; taking video, audio, and subtitle quality into consideration.</Overview>
   <Category>MediaApp:Video MediaServer:Video</Category>
