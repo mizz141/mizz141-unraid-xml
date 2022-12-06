@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Sneedznab</Name>
-  <Repository>ghcr.io/turbocheetah/sneedznab:master</Repository>
+  <Repository>ghcr.io/turbocheetah/sneedznab:latest</Repository>
   <Registry/>
   <Network>bridge</Network>
       <Publish>
