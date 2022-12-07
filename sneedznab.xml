@@ -74,26 +74,27 @@
       <Value>True</Value>
       <Name>ANIMETOSHO_ENABLED</Name>
       <Mode/>
-    <Variable>
+    </Variable>
     <Variable>
       <Value>True</Value>
       <Name>RUTRACKER_ENABLED</Name>
       <Mode/>
-    <Variable>
+    </Variable>
     <Variable>
       <Value></Value>
       <Name>REDIS_ENABLED</Name>
       <Mode/>
-    <Variable>
+    </Variable>
     <Variable>
       <Value></Value>
       <Name>REDIS_URL</Name>
       <Mode/>
-    <Variable>
+    </Variable>
     <Variable>
       <Value></Value>
       <Name>REDIS_TOKEN</Name>
       <Mode/>
+    </Variable>
     <Variable>
       <Value>120</Value>
       <Name>CACHE_TTL</Name>
