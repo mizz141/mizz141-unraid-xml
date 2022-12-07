@@ -21,7 +21,10 @@
    Sneedznab is a Torznab Indexer which pulls data directly from Sneedex, to use, simply create a new torznab indexer, and use [ServerURL]:[Port] for the indexer.
    It can be used both as a Torrent Indexer, and NZB Indexer.
    &#xD;
-   Sneedex tracks the best releases of anime torrents; taking video, audio, and subtitle quality into consideration.</Overview>
+   Sneedex tracks the best releases of anime torrents; taking video, audio, and subtitle quality into consideration.
+   &#xD;
+   WARNING: This software is still in early development, expect heavy changes as time goes by, maybe redownload the app when an update rolls around.
+  </Overview>
   <Category>MediaApp:Video MediaServer:Video</Category>
   <WebUI/>
   <TemplateURL/>
@@ -44,6 +47,21 @@
   <Environment>
     <Variable>
       <Value></Value>
+      <Name>ANIMETOSHO_ENABLED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>RUTRACKER_ENABLED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>False</Value>
+      <Name>ANIMEBYTES_ENABLED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
       <Name>ANIMEBYTES_USERNAME</Name>
       <Mode/>
     </Variable>
@@ -52,6 +70,30 @@
       <Name>ANIMEBYTES_PASSKEY</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>True</Value>
+      <Name>ANIMETOSHO_ENABLED</Name>
+      <Mode/>
+    <Variable>
+    <Variable>
+      <Value>True</Value>
+      <Name>RUTRACKER_ENABLED</Name>
+      <Mode/>
+    <Variable>
+    <Variable>
+      <Value></Value>
+      <Name>REDIS_ENABLED</Name>
+      <Mode/>
+    <Variable>
+    <Variable>
+      <Value></Value>
+      <Name>REDIS_URL</Name>
+      <Mode/>
+    <Variable>
+    <Variable>
+      <Value></Value>
+      <Name>REDIS_TOKEN</Name>
+      <Mode/>
     <Variable>
       <Value>120</Value>
       <Name>CACHE_TTL</Name>
@@ -64,8 +106,14 @@
     </Variable>
   </Environment>
   <Labels/>
+  <Config Name="ANIMEBYTES_ENABLED" Target="ANIMEBYTES_ENABLED" Default="False" Mode="" Description="Use AnimeBytes (Default False)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="ANIMEBYTES_USERNAME" Target="ANIMEBYTES_USERNAME" Default="" Mode="" Description="Your AnimeBytes username" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="ANIMEBYTES_PASSKEY" Target="ANIMEBYTES_PASSKEY" Default="" Mode="" Description="Your AnimeBytes Passkey" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="ANIMETOSHO_ENABLED" Target="ANIMETOSHO_ENABLED" Default="True" Mode="" Description="Use AnimeTosho (Default True)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="ANIMEBYTES_ENABLED" Target="ANIMEBYTES_ENABLED" Default="True" Mode="" Description="Use RUTracker (Default True)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="REDIS_ENABLED" Target="REDIS_ENABLED" Default="False" Mode="" Description="Enable Redis cache (Needs Upstash URL and Key)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="REDIS_URL" Target="REDIS_URL" Default="" Mode="" Description="Upstash URL" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="REDIS_TOKEN" Target="REDIS_TOKEN" Default="" Mode="" Description="Upstash Token" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="CACHE_TTL" Target="CACHE_TTL" Default="120" Mode="" Description="Cache TTL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="DEBUG" Target="DEBUG" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Type="Port" Name="Sneedznab Port" Target="3000" Default="3000" Mode="tcp" Description="The port where Sonarr, Radarr etc. will access the Sneedznab API" Display="always" Required="true">3000</Config>
