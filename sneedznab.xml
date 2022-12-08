@@ -14,7 +14,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://discord.gg/UyEMAeqzX5</Support>
+  <Support>https://forums.unraid.net/topic/132133-support-turbocheetahmizz141-sneedznab/</Support>
   <Project>https://sneedex.moe/</Project>
   <Overview>&#xD;
    &#xD;
@@ -45,6 +45,11 @@
     <Publish/>
   </Networking>
   <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>NYAA_ENABLED</Name>
+      <Mode/>
+    </Variable>
     <Variable>
       <Value></Value>
       <Name>ANIMETOSHO_ENABLED</Name>
@@ -102,6 +107,7 @@
     </Variable>
   </Environment>
   <Labels/>
+  <Config Name="NYAA_ENABLED" Target="NYAA_ENABLED" Default="True" Mode="" Description="Use Nyaa.si (Default True)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="ANIMETOSHO_ENABLED" Target="ANIMETOSHO_ENABLED" Default="True" Mode="" Description="Use AnimeTosho (Default True)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="RUTRACKER_ENABLED" Target="RUTRACKER_ENABLE" Default="True" Mode="" Description="Use RUTracker (Default True)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="ANIMEBYTES_ENABLED" Target="ANIMEBYTES_ENABLED" Default="False" Mode="" Description="Use AnimeBytes (Default False)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
