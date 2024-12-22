@@ -61,11 +61,6 @@
     </Variable>
     <Variable>
       <Value></Value>
-      <Name>ANI_USERNAME</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value></Value>
       <Name>PLEX_URL</Name>
       <Mode/>
     </Variable>
