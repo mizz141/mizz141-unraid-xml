@@ -47,6 +47,19 @@
   </Data>
   <Environment>
     <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>ANI_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value></Value>
       <Name>ANI_USERNAME</Name>
       <Mode/>
@@ -97,4 +110,6 @@
   <Config Name="SYNC_RATINGS" Target="SYNC_RATINGS" Default="" Mode="" Description="Enable Plex to Anilist rating sync (enrollment in Discover Together beta required) !!This will override any ratings you currently have on AniList!!" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SKIP_LIST_UPDATE" Target="SKIP_LIST_UPDATE" Default="" Mode="" Description="If set to True, it will NOT update your AniList which is useful if you want to do a test run to check if everything lines up properly. (default = False)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="SETTINGS_FILE" Target="SETTINGS_FILE" Default="" Mode="" Description="/config/settings.ini, ONLY USE WHEN NECESSARY" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
